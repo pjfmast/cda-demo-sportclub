@@ -1,0 +1,46 @@
+﻿@page "/"
+@inject HttpClient Http
+
+<PageTitle>Todays trainings</PageTitle>
+
+<h3>SchedulePage</h3>
+@if (Lessons == null)
+{
+    <h3>Loading lessons...</h3>
+}
+
+else if (Lessons.Count() > 0)
+{
+    <h3 class="mb-5">Workouts you can enroll on @DateOnly.FromDateTime(DateTime.Now)</h3>
+    <div class="grid">
+
+        @foreach (var lesson in Lessons)
+        {
+            <LessonCard Lesson="lesson" />
+        }
+    </div>
+}
+else
+{
+    <h4>No more workouts today, check-in tomorrow!</h4>
+}
+
+@code {
+    public required IEnumerable<LessonDto> Lessons { get; set; } = Enumerable.Empty<LessonDto>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Onnodig bij eenvoudige view-logica om een Service-class te maken:
+        // Lessons = await ScheduleService.GetTodaysLessons();
+        try
+        {
+            var result = await Http.GetFromJsonAsync<IEnumerable<LessonDto>>("api/Schedule/GetTodaysLessons");
+            Lessons = result ?? Enumerable.Empty<LessonDto>();
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine($"There was a problem loading trail data: {ex.Message}");
+        }
+
+    }
+}
