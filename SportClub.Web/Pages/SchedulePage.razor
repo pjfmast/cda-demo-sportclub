@@ -16,7 +16,16 @@ else if (Lessons.Count() > 0)
 
         @foreach (var lesson in Lessons)
         {
-            <LessonCard Lesson="lesson" />
+            <div class="card shadow" style="width: 18rem;">
+                <img src="@lesson.Image" class="card-img-top" alt="@lesson.Title">
+                <div class="card-body">
+                    <h5 class="card-title">@lesson.Title</h5>
+                    <h6 class="card-subtitle mb-3 text-muted"><span class="oi oi-map-marker"></span> @lesson.Location</h6>
+                    <div class="d-flex justify-content-between">
+                        <span><span class="oi oi-clock mr-2"></span> @lesson.StartTime.ToString("HH:mm") (@lesson.Duration minutes)</span>
+                    </div>
+                </div>
+            </div>
         }
     </div>
 }
@@ -30,8 +39,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        // Onnodig bij eenvoudige view-logica om een Service-class te maken:
-        // Lessons = await ScheduleService.GetTodaysLessons();
         try
         {
             var result = await Http.GetFromJsonAsync<IEnumerable<LessonDto>>("api/Schedule/GetTodaysLessons");
