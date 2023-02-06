@@ -364,3 +364,4 @@ FodyWeavers.xsd
 /SportClub.API/Migrations
 /SportClub.API/Data/SportClubDbContext.cs
 /SportClub.Web/Pages/LessonCard.razor
+/IntroCSharp/IntroCSharp.csproj
