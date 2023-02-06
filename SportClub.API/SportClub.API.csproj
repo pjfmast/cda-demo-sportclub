@@ -33,8 +33,4 @@
     <ProjectReference Include="..\SportClub.Models\SportClub.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>
