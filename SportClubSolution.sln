@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportClub.Models", "SportCl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportClub.Web", "SportClub.Web\SportClub.Web.csproj", "{8F78D616-F5C8-494A-AF7B-C9882811ED69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroCSharp", "IntroCSharp\IntroCSharp.csproj", "{86AD9D91-0C00-4F7C-8DB7-CBCB531AD7CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroCSharp", "IntroCSharp\IntroCSharp.csproj", "{86AD9D91-0C00-4F7C-8DB7-CBCB531AD7CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

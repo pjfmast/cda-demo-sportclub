@@ -4,19 +4,21 @@
 <PageTitle>Todays trainings</PageTitle>
 
 <h3>SchedulePage</h3>
-@if (Lessons == null)
+@if (_lessons == null)
 {
     <h3>Loading lessons...</h3>
 }
 
-else if (Lessons.Count() > 0)
+else if (_lessons.Count() > 0)
 {
+    <LessonDetails Lesson="_selectedLesson" />
+
     <h3 class="mb-5">Workouts you can enroll on @DateOnly.FromDateTime(DateTime.Now)</h3>
     <div class="grid">
 
-        @foreach (var lesson in Lessons)
+        @foreach (var lesson in _lessons)
         {
-            <LessonCard Lesson="lesson" />
+            <LessonCard Lesson="lesson" OnSelected="HandleLessonSelected" />
         }
     </div>
 }
@@ -26,21 +28,27 @@ else
 }
 
 @code {
-    public required IEnumerable<LessonDto> Lessons { get; set; } = Enumerable.Empty<LessonDto>();
+    private LessonDto? _selectedLesson;
+
+    /* Required members must be at least as visible as their containing type.
+     * For example, a public class can't contain a required field that's protected. */
+    public required IEnumerable<LessonDto> _lessons = Enumerable.Empty<LessonDto>();
 
     protected override async Task OnInitializedAsync()
     {
         // Onnodig bij eenvoudige view-logica om een Service-class te maken:
-        // Lessons = await ScheduleService.GetTodaysLessons();
         try
         {
             var result = await Http.GetFromJsonAsync<IEnumerable<LessonDto>>("api/Schedule/GetTodaysLessons");
-            Lessons = result ?? Enumerable.Empty<LessonDto>();
+            _lessons = result ?? Enumerable.Empty<LessonDto>();
         }
         catch (HttpRequestException ex)
         {
-            Console.WriteLine($"There was a problem loading trail data: {ex.Message}");
+            Console.WriteLine($"There was a problem loading lesson data: {ex.Message}");
         }
 
     }
+
+    private void HandleLessonSelected(LessonDto lesson)
+        => _selectedLesson = lesson;
 }

@@ -94,10 +94,19 @@ namespace SportClub.API.Data
             IsOutside = false
         };
 
-       
+        private static Location teteringseDijk = new Location()
+        {
+            Id = locationId++,
+            Name = "Ortega Diving",
+            Address = "Teteringsedijk 145, 4817 MD Breda",
+            Capacity = 12,
+            IsOutside = false
+        };
+
+
         #endregion
         public static readonly List<Location> Locations 
-            = new List<Location>() {apenkooiGym, boulderhalBruut, wilderen, dansStudio1, dansStudio2, belcrumhuis, fitnessRoom, tennisTVBN, paaldansStudio };
+            = new List<Location>() {apenkooiGym, boulderhalBruut, wilderen, dansStudio1, dansStudio2, belcrumhuis, fitnessRoom, tennisTVBN, paaldansStudio, teteringseDijk };
 
 
 
@@ -195,8 +204,18 @@ namespace SportClub.API.Data
             Image = "https://bress.nl/wp-content/uploads/2022/05/adult-woman-practices-anti-gravity-yoga-position-i-2022-02-02-03-49-35-utc-1024x683.jpg",
             Duration = 90
         };
+
+        private static Workout duiken = new Workout()
+        {
+            Id = workOutId++,
+            Title = "Duiken",
+            Description = "Duiken is één van de snelst groeiende avontuurlijke sporten ter wereld en dat is niet zonder reden. Het ontspannen gevoel en het gevoel van gewichtloosheid (een gevoel dat verder alleen astronauten kunnen meemaken) maakt duiken tot een unieke sport. Duiken doe je altijd met minimaal 2 personen waardoor het ook nog eens een sociale sport is. Wist je trouwens dat het aardoppervlakte\r\nuit 70% water bestaat en dat er onder water meer verschillende soorten planten en dieren leven dan erboven? Er valt dus nog genoeg te ontdekken in de onderwaterwereld!",
+            Category = "groepsles",
+            Image = "https://bress.nl/wp-content/uploads/2022/05/Schermafbeelding-2022-05-18-om-11.08.38-1024x327.png",
+            Duration = 90
+        };
         public static readonly List<Workout> Workouts 
-            = new List<Workout>() { bootcamp, boulderen, boxFit, gymmen, spinning, fitness, tennis, aerialSilk };
+            = new List<Workout>() { bootcamp, boulderen, boxFit, gymmen, spinning, fitness, tennis, aerialSilk, duiken };
 
         #endregion
 
@@ -215,6 +234,7 @@ namespace SportClub.API.Data
             new Lesson() {Id = lessonId++, WorkOutId = fitness.Id, Instructor = "Emilio", LocationId = fitnessRoom.Id, StartDateTime = today.NextDayAt(DayOfWeek.Sunday, 11, 0)},
             new Lesson() {Id = lessonId++, WorkOutId = tennis.Id, Instructor = "Judith", LocationId = tennisTVBN.Id, StartDateTime = today.AtTime(16, 0)},
             new Lesson() {Id = lessonId++, WorkOutId = aerialSilk.Id, Instructor = "Eva", LocationId = paaldansStudio.Id, StartDateTime = today.AtTime(19, 0)},
+            new Lesson() {Id = lessonId++, WorkOutId = duiken.Id, Instructor = "Suzanne", LocationId = teteringseDijk.Id, StartDateTime = today.AtTime(20, 0)},
 
             new Lesson() {Id = lessonId++, WorkOutId = boulderen.Id, Instructor = "", LocationId = boulderhalBruut.Id, StartDateTime = today.NextDayAt(DayOfWeek.Monday ,17, 0)},
             new Lesson() {Id = lessonId++, WorkOutId = boulderen.Id, Instructor = "", LocationId = boulderhalBruut.Id, StartDateTime = today.NextDayAt(DayOfWeek.Tuesday ,17, 0)},

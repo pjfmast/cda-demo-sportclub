@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace IntroCSharp
 {
-    public class DemoExtensionMethod
+    public static class DemoExtensionMethod
     {
+        public static void Times(this int times, Action<string> doSomething)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                doSomething("hello");
+            }
+        }
     }
 }

@@ -9,5 +9,5 @@ string formatedDT = dt.ToString("HH:mm");
 
 Console.WriteLine($"Now is: {formatedDT}");
 
-10.Times(s => Console.WriteLine(s));
+//10.Times(s => Console.WriteLine(s));
 
