@@ -15,15 +15,17 @@
                     <p class="mt-4">@_selectedLesson.Description</p>
                 </div>
             </div>
+            <Popup @ref="popupRef" />
             <div class="drawer-controls">
                 <button class="btn btn-secondary" @onclick="Enroll">Enroll Lesson</button>
                 <button class="btn btn-secondary" @onclick="Close">Close Lesson</button>
             </div>
+           
         }
     </div>
 </div>
 
-<Popup @ref="popupRef" />
+
 
 @code {
     private bool _isOpen;

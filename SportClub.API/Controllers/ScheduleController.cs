@@ -7,7 +7,7 @@ namespace SportClub.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ScheduleController : ControllerBase // Contoller extends ControllerBase with support for Views
+    public class ScheduleController : ControllerBase // Controller extends ControllerBase with support for Views
     {
         private readonly ISportClubRepository workoutRepository;
 

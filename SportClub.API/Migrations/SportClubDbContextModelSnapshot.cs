@@ -52,137 +52,153 @@ namespace SportClub.API.Migrations
                         {
                             Id = 1,
                             Instructor = "Marcel",
-                            LocationId = 2,
-                            StartDateTime = new DateTime(2023, 2, 14, 19, 30, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 1
+                            LocationId = 3,
+                            StartDateTime = new DateTime(2023, 2, 21, 19, 30, 0, 0, DateTimeKind.Local),
+                            WorkOutId = 4
                         },
                         new
                         {
                             Id = 2,
                             Instructor = "Coen",
-                            LocationId = 4,
+                            LocationId = 5,
                             StartDateTime = new DateTime(2023, 2, 20, 18, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 2
+                            WorkOutId = 5
                         },
                         new
                         {
                             Id = 3,
                             Instructor = "Freek",
-                            LocationId = 1,
-                            StartDateTime = new DateTime(2023, 2, 14, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            WorkOutId = 3
+                            LocationId = 2,
+                            StartDateTime = new DateTime(2023, 2, 16, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            WorkOutId = 6
                         },
                         new
                         {
                             Id = 4,
                             Instructor = "Miriam",
-                            LocationId = 5,
+                            LocationId = 6,
                             StartDateTime = new DateTime(2023, 2, 20, 20, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 5
+                            WorkOutId = 8
                         },
                         new
                         {
                             Id = 5,
                             Instructor = "Marcel",
-                            LocationId = 7,
+                            LocationId = 8,
                             StartDateTime = new DateTime(2023, 2, 18, 10, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 6
+                            WorkOutId = 9
                         },
                         new
                         {
                             Id = 6,
                             Instructor = "Laura",
-                            LocationId = 9,
+                            LocationId = 10,
                             StartDateTime = new DateTime(2023, 2, 17, 19, 30, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 9
+                            WorkOutId = 12
                         },
                         new
                         {
                             Id = 7,
                             Instructor = "Emilio",
-                            LocationId = 6,
+                            LocationId = 7,
                             StartDateTime = new DateTime(2023, 2, 19, 11, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 7
+                            WorkOutId = 10
                         },
                         new
                         {
                             Id = 8,
                             Instructor = "Judith",
-                            LocationId = 8,
-                            StartDateTime = new DateTime(2023, 2, 14, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            WorkOutId = 8
+                            LocationId = 9,
+                            StartDateTime = new DateTime(2023, 2, 16, 16, 0, 0, 0, DateTimeKind.Unspecified),
+                            WorkOutId = 11
                         },
                         new
                         {
                             Id = 9,
                             Instructor = "Eva",
-                            LocationId = 9,
-                            StartDateTime = new DateTime(2023, 2, 14, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            WorkOutId = 9
+                            LocationId = 10,
+                            StartDateTime = new DateTime(2023, 2, 16, 19, 0, 0, 0, DateTimeKind.Unspecified),
+                            WorkOutId = 12
                         },
                         new
                         {
                             Id = 10,
                             Instructor = "Suzanne",
-                            LocationId = 10,
-                            StartDateTime = new DateTime(2023, 2, 14, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            WorkOutId = 10
+                            LocationId = 11,
+                            StartDateTime = new DateTime(2023, 2, 16, 20, 0, 0, 0, DateTimeKind.Unspecified),
+                            WorkOutId = 13
                         },
                         new
                         {
                             Id = 11,
-                            Instructor = "",
-                            LocationId = 3,
-                            StartDateTime = new DateTime(2023, 2, 20, 17, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 4
+                            Instructor = "zelf trainen",
+                            LocationId = 1,
+                            StartDateTime = new DateTime(2023, 2, 16, 17, 0, 0, 0, DateTimeKind.Unspecified),
+                            WorkOutId = 3
                         },
                         new
                         {
                             Id = 12,
-                            Instructor = "",
-                            LocationId = 3,
-                            StartDateTime = new DateTime(2023, 2, 14, 17, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 4
+                            Instructor = "Robert",
+                            LocationId = 5,
+                            StartDateTime = new DateTime(2023, 2, 16, 19, 30, 0, 0, DateTimeKind.Unspecified),
+                            WorkOutId = 2
                         },
                         new
                         {
                             Id = 13,
                             Instructor = "",
-                            LocationId = 3,
-                            StartDateTime = new DateTime(2023, 2, 15, 14, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 4
+                            LocationId = 4,
+                            StartDateTime = new DateTime(2023, 2, 20, 17, 0, 0, 0, DateTimeKind.Local),
+                            WorkOutId = 7
                         },
                         new
                         {
                             Id = 14,
                             Instructor = "",
-                            LocationId = 3,
-                            StartDateTime = new DateTime(2023, 2, 16, 14, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 4
+                            LocationId = 4,
+                            StartDateTime = new DateTime(2023, 2, 21, 17, 0, 0, 0, DateTimeKind.Local),
+                            WorkOutId = 7
                         },
                         new
                         {
                             Id = 15,
                             Instructor = "",
-                            LocationId = 3,
-                            StartDateTime = new DateTime(2023, 2, 17, 14, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 4
+                            LocationId = 4,
+                            StartDateTime = new DateTime(2023, 2, 22, 14, 0, 0, 0, DateTimeKind.Local),
+                            WorkOutId = 7
                         },
                         new
                         {
                             Id = 16,
                             Instructor = "",
-                            LocationId = 3,
-                            StartDateTime = new DateTime(2023, 2, 18, 10, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 4
+                            LocationId = 4,
+                            StartDateTime = new DateTime(2023, 2, 16, 14, 0, 0, 0, DateTimeKind.Local),
+                            WorkOutId = 7
                         },
                         new
                         {
                             Id = 17,
                             Instructor = "",
-                            LocationId = 3,
+                            LocationId = 4,
+                            StartDateTime = new DateTime(2023, 2, 17, 14, 0, 0, 0, DateTimeKind.Local),
+                            WorkOutId = 7
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Instructor = "",
+                            LocationId = 4,
+                            StartDateTime = new DateTime(2023, 2, 18, 10, 0, 0, 0, DateTimeKind.Local),
+                            WorkOutId = 7
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Instructor = "",
+                            LocationId = 4,
                             StartDateTime = new DateTime(2023, 2, 19, 10, 0, 0, 0, DateTimeKind.Local),
-                            WorkOutId = 4
+                            WorkOutId = 7
                         });
                 });
 
@@ -216,6 +232,14 @@ namespace SportClub.API.Migrations
                         new
                         {
                             Id = 1,
+                            Address = "Nieuwe Inslag 99",
+                            Capacity = 150,
+                            IsOutside = false,
+                            Name = "BRESS Sportcentrum"
+                        },
+                        new
+                        {
+                            Id = 2,
                             Address = "Brouwmeesterstraat 10 Breda",
                             Capacity = 25,
                             IsOutside = false,
@@ -223,7 +247,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 3,
+                            Id = 4,
                             Address = "Spinveld 66 A1 Breda",
                             Capacity = 60,
                             IsOutside = false,
@@ -231,7 +255,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 2,
+                            Id = 3,
                             Address = "Wilderen 2, 4817 VG Breda",
                             Capacity = 20,
                             IsOutside = true,
@@ -239,7 +263,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 4,
+                            Id = 5,
                             Address = "Nieuwe Inslag 99, 4817 GN Breda",
                             Capacity = 30,
                             IsOutside = true,
@@ -247,7 +271,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 5,
+                            Id = 6,
                             Address = "Nieuwe Inslag 99, 4817 GN Breda",
                             Capacity = 20,
                             IsOutside = true,
@@ -255,7 +279,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 7,
+                            Id = 8,
                             Address = "Pastoor Pottersplein 12, 4815 BC Breda",
                             Capacity = 25,
                             IsOutside = true,
@@ -263,7 +287,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 6,
+                            Id = 7,
                             Address = "Nieuwe Inslag 99, 4817 GN Breda",
                             Capacity = 25,
                             IsOutside = false,
@@ -271,7 +295,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 8,
+                            Id = 9,
                             Address = "Terheijdenseweg 508 Breda",
                             Capacity = 16,
                             IsOutside = true,
@@ -279,7 +303,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 9,
+                            Id = 10,
                             Address = "Dr. Schaepmanlaan 4 Breda",
                             Capacity = 16,
                             IsOutside = false,
@@ -287,7 +311,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 10,
+                            Id = 11,
                             Address = "Teteringsedijk 145, 4817 MD Breda",
                             Capacity = 12,
                             IsOutside = false,
@@ -332,6 +356,33 @@ namespace SportClub.API.Migrations
                         new
                         {
                             Id = 1,
+                            Category = "buiten sporten",
+                            Description = "Atletiek is samen met de zwemsport de oudste sport ter wereld en wordt ook wel ‘de moeder der sporten’ genoemd omdat het de menselijke basisbewegingen (lopen, springen en werpen) omvat. Bij atletiek moeten sporters (de atleten) op individueel of in groepen (estafette) presteren en kan zowel op de weg als op de atletiekbaan worden beoefend.",
+                            Duration = 75,
+                            Image = "https://bress.nl/wp-content/uploads/2022/05/Schermafbeelding-2022-05-30-om-14.36.33-1024x329.png",
+                            Title = "Atletiek"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Category = "binnen sporten",
+                            Description = "Ben jij wel toe aan wat ontspanning maar wil je tegelijkertijd wel je lichaam trainen? Volg dan de Body & Mind les van Robert. Tijdens deze les leer je gecontroleerd te ademhalen en verbeter je je flexibiliteit en statische kracht. Dankzij de meditatie oefeningen verbeter je ook nog eens je concentratie. Alle oefeningen worden uitgevoerd met rustgevende muziek op de achtergrond maar vergis je niet; dit is absoluut geen suffe les!",
+                            Duration = 50,
+                            Image = "https://bress.nl/wp-content/uploads/2022/05/girl-in-black-sport-clothes-have-planking-exercise-2021-08-30-00-36-32-utc-1024x683.jpg",
+                            Title = "Body and mind"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Category = "binnen sporten",
+                            Description = "Badminton is een Olympische sport die wordt gespeeld met een racket en een shuttle. De shuttle wordt over een net heen en weer geslagen met de rackets. Afhankelijk van met hoeveel personen je op de baan staat speel je een enkelspel of een dubbelspel. Bij een enkelspel speel je één tegen één en bij een dubbelspel twee tegen twee.",
+                            Duration = 60,
+                            Image = "https://bress.nl/wp-content/uploads/2022/03/277168663_7600580646633713_135095285667829979_n-1024x545.jpeg",
+                            Title = "Badminton"
+                        },
+                        new
+                        {
+                            Id = 4,
                             Category = "conditie en kracht",
                             Description = "Bootcamp is groepstraining die conditie- en krachtoefeningen combineert en buiten plaatsvindt. Tijdens veel oefeningen wordt er gebruik gemaakt van eigen lichaamsgewicht en obstakels die in de omgeving aanwezig zijn, denk bijvoorbeeld aan bankjes, stoepranden en hekken. Sommige oefeningen doe je in tweetallen of in kleine groepjes, zodat je elkaar kunt gebruiken om bepaalde oefeningen uit te voeren en elkaar aan te moedigen. Samen bereik je meer!",
                             Duration = 75,
@@ -341,7 +392,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 4,
+                            Id = 7,
                             Category = "conditie en kracht",
                             Description = "Boulderen is een spectaculaire vorm van klimmen en komt voort uit het beklimmen van rotsblokken. Anders dan bij klimmen heb je bij boulderen geen touw en klimgordels nodig. Dikke valmatten onder de routes zorgen voor veiligheid. De klimwanden in de boulderhal hebben een maximale hoogte van 4,5 meter en variëren van voorover neigend tot en met fors achterover hellend. Het is een sport voor vrijwel iedereen en kan zowel individueel als in groepsverband beoefend worden. Door de mix van de verschillende wanden en boulders kunnen zowel beginnende klimmers als gevorderden naast en met elkaar boulderen.",
                             Duration = 120,
@@ -351,7 +402,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 2,
+                            Id = 5,
                             Category = "kracht",
                             Description = "Tijdens de high intensity training BoxFit krijg je te maken met een combinatie van bokstechnieken en oefeningen met eigen lichaamsgewicht, waarbij fun en samenwerking centraal staat.",
                             Duration = 60,
@@ -360,7 +411,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 3,
+                            Id = 6,
                             Category = "conditie en kracht",
                             Description = "Bij onze gymlessen maak je na een lange werkdag je hoofd weer even helemaal leeg. De nostalgie slaat zó hard in dat de smaak van Wicky spontaan weer te proeven is! Elke les bestaat uit een warming-up, een hoofdspel en een eindspel. De opgeleide meesters en juffen van ApenkooiGym doen er alles aan om jou zo hard mogelijk door de zaal te laten gieren. De ene keer is dat met Apenkooien, de andere keer met bestaande of zelfbedachte spellen als James Bond, het Grote Waterspektakel, Super Mario Kart of één van de vele varianten op trefbal. Al deze spellen zijn (her)uitgevonden voor volwassenen. Nooit kinderachtig, altijd met kinderlijk plezier. Door het trainen van je lachspieren heb je bijna niet in de gaten dat je met een aardige work-out bezig bent.",
                             Duration = 75,
@@ -370,7 +421,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 5,
+                            Id = 8,
                             Category = "cardio",
                             Description = "Spinning is een high intensity groepsles waarbij je op een leuke manier je conditie in hoog tempo verbetert. Je doet dit op een vaststaande fiets, met extra weerstand. Hoeveel weerstand? Dit bepaal je helemaal zelf! Hierdoor is deze les geschikt voor iedereen. De instructeur geeft instructies terwijl de muziek het tempo ondersteunt.",
                             Duration = 60,
@@ -379,7 +430,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 7,
+                            Id = 10,
                             Category = "kracht",
                             Description = "Onze fitness beschikt over de up-to-date cardio- en krachtapparatuur van Matrix Fitness en daarnaast ook over een free weight area waar je alle ruimte hebt om (grond)oefeningen te doen of te trainen met dumbbells, barbells en andere materialen.",
                             Duration = 90,
@@ -388,7 +439,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 8,
+                            Id = 11,
                             Category = "balsport",
                             Description = "Tennis is een balsport voor twee spelers (enkelspel) of paren (dubbelspel). De tennisbal moet met een racket over een net op de speelhelft van de tegenspeler(s) geslagen worden. Het doel is om het de tegenspelers(s) onmogelijk te maken de bal terug te slaan.",
                             Duration = 90,
@@ -397,7 +448,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 9,
+                            Id = 12,
                             Category = "groepsles",
                             Description = "Aerial Silk is een unieke sport die zijn oorsprong kent in het circus. Tijdens het beoefenen van deze sport train je heel je lichaam en ontwikkel je evenwicht, kracht en flexibiliteit. Daarnaast krijg je echt een kick als je in de doeken hangt.",
                             Duration = 90,
@@ -406,7 +457,7 @@ namespace SportClub.API.Migrations
                         },
                         new
                         {
-                            Id = 10,
+                            Id = 13,
                             Category = "groepsles",
                             Description = "Duiken is één van de snelst groeiende avontuurlijke sporten ter wereld en dat is niet zonder reden. Het ontspannen gevoel en het gevoel van gewichtloosheid (een gevoel dat verder alleen astronauten kunnen meemaken) maakt duiken tot een unieke sport. Duiken doe je altijd met minimaal 2 personen waardoor het ook nog eens een sociale sport is. Wist je trouwens dat het aardoppervlakte\r\nuit 70% water bestaat en dat er onder water meer verschillende soorten planten en dieren leven dan erboven? Er valt dus nog genoeg te ontdekken in de onderwaterwereld!",
                             Duration = 90,

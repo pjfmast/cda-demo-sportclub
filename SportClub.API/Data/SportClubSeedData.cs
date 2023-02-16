@@ -13,6 +13,15 @@ namespace SportClub.API.Data
         #region individual locations
         private static int locationId = 1;
 
+        private static Location bressSportcentrum = new Location()
+        {
+            Id = locationId++,
+            Name = "BRESS Sportcentrum",
+            Address = "Nieuwe Inslag 99",
+            Capacity = 150,
+            IsOutside = false
+        };
+        
         private static Location apenkooiGym = new Location()
         {
             Id = locationId++,
@@ -106,12 +115,42 @@ namespace SportClub.API.Data
 
         #endregion
         public static readonly List<Location> Locations 
-            = new List<Location>() {apenkooiGym, boulderhalBruut, wilderen, dansStudio1, dansStudio2, belcrumhuis, fitnessRoom, tennisTVBN, paaldansStudio, teteringseDijk };
+            = new List<Location>() {bressSportcentrum, apenkooiGym, boulderhalBruut, wilderen, dansStudio1, dansStudio2, belcrumhuis, fitnessRoom, tennisTVBN, paaldansStudio, teteringseDijk };
 
 
 
         #region individual workouts
         private static int workOutId = 1;
+        private static Workout atletiek = new Workout()
+        {
+            Id = workOutId++,
+            Title = "Atletiek",
+            Description = "Atletiek is samen met de zwemsport de oudste sport ter wereld en wordt ook wel ‘de moeder der sporten’ genoemd omdat het de menselijke basisbewegingen (lopen, springen en werpen) omvat. Bij atletiek moeten sporters (de atleten) op individueel of in groepen (estafette) presteren en kan zowel op de weg als op de atletiekbaan worden beoefend.",
+            Category = "buiten sporten",
+            Image = "https://bress.nl/wp-content/uploads/2022/05/Schermafbeelding-2022-05-30-om-14.36.33-1024x329.png",
+            Duration = 75,
+        };
+
+        private static Workout bodyAndMind = new Workout()
+        {
+            Id = workOutId++,
+            Title = "Body and mind",
+            Description = "Ben jij wel toe aan wat ontspanning maar wil je tegelijkertijd wel je lichaam trainen? Volg dan de Body & Mind les van Robert. Tijdens deze les leer je gecontroleerd te ademhalen en verbeter je je flexibiliteit en statische kracht. Dankzij de meditatie oefeningen verbeter je ook nog eens je concentratie. Alle oefeningen worden uitgevoerd met rustgevende muziek op de achtergrond maar vergis je niet; dit is absoluut geen suffe les!",
+            Category = "binnen sporten",
+            Image = "https://bress.nl/wp-content/uploads/2022/05/girl-in-black-sport-clothes-have-planking-exercise-2021-08-30-00-36-32-utc-1024x683.jpg",
+            Duration = 50,
+        };
+
+        private static Workout badminton = new Workout()
+        {
+            Id = workOutId++,
+            Title = "Badminton",
+            Description = "Badminton is een Olympische sport die wordt gespeeld met een racket en een shuttle. De shuttle wordt over een net heen en weer geslagen met de rackets. Afhankelijk van met hoeveel personen je op de baan staat speel je een enkelspel of een dubbelspel. Bij een enkelspel speel je één tegen één en bij een dubbelspel twee tegen twee.",
+            Category = "binnen sporten",
+            Image = "https://bress.nl/wp-content/uploads/2022/03/277168663_7600580646633713_135095285667829979_n-1024x545.jpeg",
+            Duration = 60,
+        };
+
         private static Workout bootcamp = new Workout()
         {
             Id = workOutId++,
@@ -215,7 +254,7 @@ namespace SportClub.API.Data
             Duration = 90
         };
         public static readonly List<Workout> Workouts 
-            = new List<Workout>() { bootcamp, boulderen, boxFit, gymmen, spinning, fitness, tennis, aerialSilk, duiken };
+            = new List<Workout>() { atletiek, bodyAndMind, badminton, bootcamp, boulderen, boxFit, gymmen, spinning, fitness, tennis, aerialSilk, duiken };
 
         #endregion
 
@@ -235,6 +274,8 @@ namespace SportClub.API.Data
             new Lesson() {Id = lessonId++, WorkOutId = tennis.Id, Instructor = "Judith", LocationId = tennisTVBN.Id, StartDateTime = today.AtTime(16, 0)},
             new Lesson() {Id = lessonId++, WorkOutId = aerialSilk.Id, Instructor = "Eva", LocationId = paaldansStudio.Id, StartDateTime = today.AtTime(19, 0)},
             new Lesson() {Id = lessonId++, WorkOutId = duiken.Id, Instructor = "Suzanne", LocationId = teteringseDijk.Id, StartDateTime = today.AtTime(20, 0)},
+            new Lesson() {Id = lessonId++, WorkOutId = badminton.Id, Instructor = "zelf trainen", LocationId = bressSportcentrum.Id, StartDateTime = today.AtTime(17, 0)},
+            new Lesson() {Id = lessonId++, WorkOutId = bodyAndMind.Id, Instructor = "Robert", LocationId = dansStudio1.Id, StartDateTime = today.AtTime(19, 30)},
 
             new Lesson() {Id = lessonId++, WorkOutId = boulderen.Id, Instructor = "", LocationId = boulderhalBruut.Id, StartDateTime = today.NextDayAt(DayOfWeek.Monday ,17, 0)},
             new Lesson() {Id = lessonId++, WorkOutId = boulderen.Id, Instructor = "", LocationId = boulderhalBruut.Id, StartDateTime = today.NextDayAt(DayOfWeek.Tuesday ,17, 0)},
