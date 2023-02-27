@@ -21,7 +21,7 @@ a {
 
 .navbar {
     border-bottom: 2px solid var(--brand);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 100%), url("https://bress.nl/wp-content/uploads/2022/01/logo-bress-orange@4.png") no-repeat center;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 100%), url("https://github.com/chrissainty/blazor-in-action/blob/main/chapter-04/BlazingTrails%20-%20Querystrings/BlazingTrails.Client/wwwroot/images/navbar-bg.jpg") no-repeat center;
     background-size: cover;
 }
 

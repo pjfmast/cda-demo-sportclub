@@ -1,12 +1,19 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Net.Http.Headers;
+using SportClub.API.Configuration;
 using SportClub.API.Data;
 using SportClub.API.Repositories;
 using SportClub.API.Repositories.Contracts;
+using SportClub.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Les 3. For demo using EmailService
+//var emailConfig = builder.Configuration
+//        .GetSection("EmailConfiguration")
+//        .Get<EmailConfiguration>();
+//builder.Services.AddSingleton(emailConfig);
 
 builder.Services.AddControllers();
 
@@ -19,10 +26,18 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("SportClubDbConne
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Les 3. Added for EmailService
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection(nameof(MailSettings)));
+builder.Services.AddTransient<IMailService, MailService>();
+
+
 // Added for SportClub
 //builder.Services.AddScoped<ISportClubRepository, SportClubInMemoryRepository>();
 // Les 2. For using EF with SportClubContext
 builder.Services.AddScoped<ISportClubRepository, SportClubDbRepository>();
+
+// Lesson 3. demo EmailService
+//builder.Services.AddScoped<IEmailSender, EmailSender>();
 
 var app = builder.Build();
 

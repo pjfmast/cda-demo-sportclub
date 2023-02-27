@@ -1,7 +1,8 @@
-﻿@page "/"
+﻿@page "/schedule/today"
 @inject HttpClient Http
+@inject NavigationManager NavManager
 
-<PageTitle>Todays trainings</PageTitle>
+<PageTitle>@TitleForSchedule()</PageTitle>
 
 <h3>SchedulePage</h3>
 @if (_lessons == null)
@@ -47,6 +48,17 @@ else
             Console.WriteLine($"There was a problem loading lesson data: {ex.Message}");
         }
 
+    }
+
+    private String TitleForSchedule ()
+    {
+        if (NavManager.Uri.Contains("today"))
+        {
+            return "Todays trainings you can enroll";
+        } else
+        {
+            return "Schedule for selected periode";
+        }
     }
 
     private void HandleLessonSelected(LessonDto lesson)
