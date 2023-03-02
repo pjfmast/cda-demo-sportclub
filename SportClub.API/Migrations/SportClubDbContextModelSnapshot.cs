@@ -17,7 +17,7 @@ namespace SportClub.API.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.2")
+                .HasAnnotation("ProductVersion", "7.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -61,7 +61,7 @@ namespace SportClub.API.Migrations
                             Id = 2,
                             Instructor = "Coen",
                             LocationId = 5,
-                            StartDateTime = new DateTime(2023, 2, 27, 18, 0, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 6, 18, 0, 0, 0, DateTimeKind.Local),
                             WorkOutId = 15
                         },
                         new
@@ -69,7 +69,7 @@ namespace SportClub.API.Migrations
                             Id = 3,
                             Instructor = "Freek",
                             LocationId = 2,
-                            StartDateTime = new DateTime(2023, 2, 24, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 2, 28, 18, 0, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 16
                         },
                         new
@@ -77,7 +77,7 @@ namespace SportClub.API.Migrations
                             Id = 4,
                             Instructor = "Miriam",
                             LocationId = 6,
-                            StartDateTime = new DateTime(2023, 2, 27, 20, 0, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 6, 20, 0, 0, 0, DateTimeKind.Local),
                             WorkOutId = 17
                         },
                         new
@@ -85,7 +85,7 @@ namespace SportClub.API.Migrations
                             Id = 5,
                             Instructor = "Marcel",
                             LocationId = 8,
-                            StartDateTime = new DateTime(2023, 2, 25, 10, 0, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 4, 10, 0, 0, 0, DateTimeKind.Local),
                             WorkOutId = 1
                         },
                         new
@@ -93,7 +93,7 @@ namespace SportClub.API.Migrations
                             Id = 6,
                             Instructor = "Laura",
                             LocationId = 10,
-                            StartDateTime = new DateTime(2023, 2, 24, 19, 30, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 3, 19, 30, 0, 0, DateTimeKind.Local),
                             WorkOutId = 2
                         },
                         new
@@ -101,7 +101,7 @@ namespace SportClub.API.Migrations
                             Id = 7,
                             Instructor = "Emilio",
                             LocationId = 7,
-                            StartDateTime = new DateTime(2023, 2, 26, 11, 0, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 5, 11, 0, 0, 0, DateTimeKind.Local),
                             WorkOutId = 18
                         },
                         new
@@ -109,7 +109,7 @@ namespace SportClub.API.Migrations
                             Id = 8,
                             Instructor = "Judith",
                             LocationId = 9,
-                            StartDateTime = new DateTime(2023, 2, 24, 16, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 2, 28, 16, 0, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 19
                         },
                         new
@@ -117,7 +117,7 @@ namespace SportClub.API.Migrations
                             Id = 9,
                             Instructor = "Eva",
                             LocationId = 10,
-                            StartDateTime = new DateTime(2023, 2, 24, 19, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 2, 28, 19, 0, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 2
                         },
                         new
@@ -125,7 +125,7 @@ namespace SportClub.API.Migrations
                             Id = 10,
                             Instructor = "Suzanne",
                             LocationId = 11,
-                            StartDateTime = new DateTime(2023, 2, 24, 20, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 2, 28, 20, 0, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 20
                         },
                         new
@@ -133,7 +133,7 @@ namespace SportClub.API.Migrations
                             Id = 11,
                             Instructor = "zelf trainen",
                             LocationId = 1,
-                            StartDateTime = new DateTime(2023, 2, 24, 17, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 2, 28, 17, 0, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 4
                         },
                         new
@@ -141,7 +141,7 @@ namespace SportClub.API.Migrations
                             Id = 12,
                             Instructor = "Robert",
                             LocationId = 5,
-                            StartDateTime = new DateTime(2023, 2, 24, 19, 30, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 2, 28, 19, 30, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 9
                         },
                         new
@@ -149,7 +149,7 @@ namespace SportClub.API.Migrations
                             Id = 13,
                             Instructor = "",
                             LocationId = 4,
-                            StartDateTime = new DateTime(2023, 2, 27, 17, 0, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 6, 17, 0, 0, 0, DateTimeKind.Local),
                             WorkOutId = 14
                         },
                         new
@@ -181,7 +181,7 @@ namespace SportClub.API.Migrations
                             Id = 17,
                             Instructor = "",
                             LocationId = 4,
-                            StartDateTime = new DateTime(2023, 2, 24, 14, 0, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 3, 14, 0, 0, 0, DateTimeKind.Local),
                             WorkOutId = 14
                         },
                         new
@@ -189,7 +189,7 @@ namespace SportClub.API.Migrations
                             Id = 18,
                             Instructor = "",
                             LocationId = 4,
-                            StartDateTime = new DateTime(2023, 2, 25, 10, 0, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 4, 10, 0, 0, 0, DateTimeKind.Local),
                             WorkOutId = 14
                         },
                         new
@@ -197,7 +197,7 @@ namespace SportClub.API.Migrations
                             Id = 19,
                             Instructor = "",
                             LocationId = 4,
-                            StartDateTime = new DateTime(2023, 2, 26, 10, 0, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 5, 10, 0, 0, 0, DateTimeKind.Local),
                             WorkOutId = 14
                         });
                 });

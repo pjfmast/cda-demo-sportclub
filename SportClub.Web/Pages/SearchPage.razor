@@ -1,4 +1,6 @@
 ﻿@page "/search/{SearchTerm}"
+@page "/search/{SearchTerm}/noCosts/{NoCosts:bool}"
+
 @inject HttpClient Http
 
 <PageTitle>Search in workouts - Bress</PageTitle>
@@ -36,7 +38,7 @@ else
     private WorkoutDto? _selectedWorkoutDto;
 
     [Parameter] public required string SearchTerm { get; set; }
-    [Parameter] public int? MaxLength { get; set; }
+    [Parameter] public bool? NoCosts { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
@@ -58,13 +60,15 @@ else
 
     protected override void OnParametersSet()
     {
-        if (_cachedSearchResults.Any() && MaxLength.HasValue)
-        {
-            _searchResults = _cachedSearchResults.Where(x => x.Duration <= MaxLength.Value);
-        }
-        else if (_cachedSearchResults.Any() && MaxLength is null)
+        _selectedWorkoutDto = null;
+
+        if (_cachedSearchResults.Any() && NoCosts is null or false)
         {
             _searchResults = _cachedSearchResults;
+        }
+        else if (_cachedSearchResults.Any())
+        {
+            _searchResults = _cachedSearchResults.Where(x => x.Price is null or 0M);
         }
     }
 
