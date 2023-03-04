@@ -8,13 +8,6 @@ using SportClub.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Les 3. For demo using EmailService
-//var emailConfig = builder.Configuration
-//        .GetSection("EmailConfiguration")
-//        .Get<EmailConfiguration>();
-//builder.Services.AddSingleton(emailConfig);
-
 builder.Services.AddControllers();
 
 // Les 2. For using EF with SportClubContext

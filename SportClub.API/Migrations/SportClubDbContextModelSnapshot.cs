@@ -53,7 +53,7 @@ namespace SportClub.API.Migrations
                             Id = 1,
                             Instructor = "Marcel",
                             LocationId = 3,
-                            StartDateTime = new DateTime(2023, 2, 28, 19, 30, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 7, 19, 30, 0, 0, DateTimeKind.Local),
                             WorkOutId = 12
                         },
                         new
@@ -69,7 +69,7 @@ namespace SportClub.API.Migrations
                             Id = 3,
                             Instructor = "Freek",
                             LocationId = 2,
-                            StartDateTime = new DateTime(2023, 2, 28, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 3, 2, 18, 0, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 16
                         },
                         new
@@ -109,7 +109,7 @@ namespace SportClub.API.Migrations
                             Id = 8,
                             Instructor = "Judith",
                             LocationId = 9,
-                            StartDateTime = new DateTime(2023, 2, 28, 16, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 3, 2, 16, 0, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 19
                         },
                         new
@@ -117,7 +117,7 @@ namespace SportClub.API.Migrations
                             Id = 9,
                             Instructor = "Eva",
                             LocationId = 10,
-                            StartDateTime = new DateTime(2023, 2, 28, 19, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 3, 2, 19, 0, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 2
                         },
                         new
@@ -125,7 +125,7 @@ namespace SportClub.API.Migrations
                             Id = 10,
                             Instructor = "Suzanne",
                             LocationId = 11,
-                            StartDateTime = new DateTime(2023, 2, 28, 20, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 3, 2, 20, 0, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 20
                         },
                         new
@@ -133,7 +133,7 @@ namespace SportClub.API.Migrations
                             Id = 11,
                             Instructor = "zelf trainen",
                             LocationId = 1,
-                            StartDateTime = new DateTime(2023, 2, 28, 17, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 3, 2, 17, 0, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 4
                         },
                         new
@@ -141,7 +141,7 @@ namespace SportClub.API.Migrations
                             Id = 12,
                             Instructor = "Robert",
                             LocationId = 5,
-                            StartDateTime = new DateTime(2023, 2, 28, 19, 30, 0, 0, DateTimeKind.Unspecified),
+                            StartDateTime = new DateTime(2023, 3, 2, 19, 30, 0, 0, DateTimeKind.Unspecified),
                             WorkOutId = 9
                         },
                         new
@@ -157,7 +157,7 @@ namespace SportClub.API.Migrations
                             Id = 14,
                             Instructor = "",
                             LocationId = 4,
-                            StartDateTime = new DateTime(2023, 2, 28, 17, 0, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 7, 17, 0, 0, 0, DateTimeKind.Local),
                             WorkOutId = 14
                         },
                         new
@@ -165,7 +165,7 @@ namespace SportClub.API.Migrations
                             Id = 15,
                             Instructor = "",
                             LocationId = 4,
-                            StartDateTime = new DateTime(2023, 3, 1, 14, 0, 0, 0, DateTimeKind.Local),
+                            StartDateTime = new DateTime(2023, 3, 8, 14, 0, 0, 0, DateTimeKind.Local),
                             WorkOutId = 14
                         },
                         new
