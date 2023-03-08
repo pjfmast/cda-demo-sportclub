@@ -1,0 +1,10 @@
+Auth0 settings
+Name:
+	SportClub
+Domain:
+	dev-lmmvveb5oohd3up5.us.auth0.com
+Client-ID:
+	0m9SQpIzYRLQ7Ag8uBapp4mGPx4AzMgl
+
+Client-Secret:
+	m45bB_UXsbCBRBJuN4wX9DbncORvygj-kC65U_fcakStO1UI7pnhkX-B3XdEz6__

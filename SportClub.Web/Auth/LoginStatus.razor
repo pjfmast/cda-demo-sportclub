@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
+
+@inject NavigationManager Navigation
+
+<div class="container text-right">
+    <AuthorizeView>
+        <Authorized>
+            <div>
+                Hello, @context.User.Identity!.Name
+                <a href="#" @onclick="BeginSignOut">Log out</a>
+            </div>
+        </Authorized>
+        <NotAuthorized>
+            <a href="authentication/login">Log in/Sign up</a>
+        </NotAuthorized>
+    </AuthorizeView>
+</div>
+
+@code{
+    private void BeginSignOut(MouseEventArgs args)
+    {
+        // this is obsolete in .NET 7:
+        //await SignOutManager.SetSignOutState();
+        //Navigation.NavigateTo("authentication/logout");
+        // Replace with:
+        Navigation.NavigateToLogout("authentication/logout");
+    }
+}

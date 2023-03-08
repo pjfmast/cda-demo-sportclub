@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Net.Http.Headers;
 using SportClub.API.Configuration;
@@ -9,6 +10,17 @@ using SportClub.API.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+// Les 4. authentication
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.Authority = builder.Configuration["Auth0:Authority"];
+    options.Audience = builder.Configuration["Auth0:ApiIdentifier"];
+});
+
 
 // Les 2. For using EF with SportClubContext
 builder.Services.AddDbContext<SportClubDbContext>(options =>
@@ -25,9 +37,9 @@ builder.Services.AddTransient<IMailService, MailService>();
 
 
 // Added for SportClub
-//builder.Services.AddScoped<ISportClubRepository, SportClubInMemoryRepository>();
+builder.Services.AddScoped<ISportClubRepository, SportClubInMemoryRepository>();
 // Les 2. For using EF with SportClubContext
-builder.Services.AddScoped<ISportClubRepository, SportClubDbRepository>();
+//builder.Services.AddScoped<ISportClubRepository, SportClubDbRepository>();
 
 // Lesson 3. demo EmailService
 //builder.Services.AddScoped<IEmailSender, EmailSender>();
@@ -49,6 +61,7 @@ app.UseCors(policy =>
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication(); /*added les 4*/
 app.UseAuthorization();
 
 app.MapControllers();
