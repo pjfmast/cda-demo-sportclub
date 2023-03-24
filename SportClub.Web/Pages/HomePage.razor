@@ -19,7 +19,7 @@ else
 
     @if (_sports.Any())
     {
-        <ViewSwitcher Items="_sports" Context="sport">
+        <ViewSwitcher Items="_sports" TItem="WorkoutDto" Context="sport">
             <GridTemplate>
                 <WorkoutCard Workout="sport" OnSelected="HandleWorkoutSelected" />
             </GridTemplate>
